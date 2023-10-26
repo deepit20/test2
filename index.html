@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Animation Demo</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+
+  .scrolling-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: scrollAnimation 10s linear infinite;
+  }
+
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .blinking-text {
+    animation: blinkAnimation 1s alternate infinite;
+  }
+
+  @keyframes blinkAnimation {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="scrolling-text" style="color:#336c92;font-size:50px;">---*  DEEPIT S NAYAK  *---</div><BR><BR><BR>
+  <div class="blinking-text" style="color:rgb(55, 115, 150);font-size:40px;">----*  NNM22CS058  *----</div>
+</body>
+</html>
